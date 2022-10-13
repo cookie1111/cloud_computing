@@ -1,0 +1,7 @@
+#2181
+bin/zookeeper-server-start.sh config/zookeeper.properties
+#9092
+JMX_PORT=8004 bin/kafka-server-start.sh config/server.properties
+
+kafka manager
+bin/cmak -Dconfig.file=conf/application.conf -Dhttp.port=8080
